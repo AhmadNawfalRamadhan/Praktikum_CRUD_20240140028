@@ -6,7 +6,7 @@ import com.deploy.praktikum1.model.dto.UserDto;
 import com.deploy.praktikum1.model.entity.User;
 import com.deploy.praktikum1.repository.UserRepository;
 import com.deploy.praktikum1.service.UserService;
-import com.deploy.praktikum1.util.ValidatationUtil;
+import com.deploy.praktikum1.util.ValidationUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     private UserRepository userRepository;
 
     @Autowired
-    private ValidatationUtil validationUtil;
+    private ValidationUtil validationUtil;
 
     @Override
     public UserDto AddUser(UserAddRequest request) {

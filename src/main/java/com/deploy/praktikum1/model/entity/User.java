@@ -9,13 +9,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
+@Entity
+@Table (name = "users")
 @Data
 @Builder
 @AllArgsConstructor
-@Table
-@Entity
+@NoArgsConstructor
 public class User {
+
     @Id
     private String id;
 
